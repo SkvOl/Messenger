@@ -8,8 +8,8 @@ Pulse: [http://138.124.55.208/pulse](http://138.124.55.208/pulse?period=7_days)
 
 Был поднят сокетный сервер Reverb, часть взаимодействия с api происходит через сокеты.
 
-На удалённом сервере было поднято 5 контейнеров docker:
-php-fpm для Laravel 11,
-nginx:alpine,
-postgres разработческая,
-postgres продакшн
+На удалённом сервере было поднято 5 контейнеров docker:<br>
+php-fpm для Laravel 11,<br>
+nginx:alpine,<br>
+postgres разработческая,<br>
+postgres продакшн<br>

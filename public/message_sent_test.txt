@@ -1,0 +1,374 @@
+2025-01-20 07:43:28  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '15555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:43:28.000000Z',
+  ),
+)
+2025-01-20 07:43:45  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '15555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:43:28.000000Z',
+  ),
+)
+2025-01-20 07:43:52  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '15555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:43:28.000000Z',
+  ),
+)
+2025-01-20 07:44:02  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '15555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:43:28.000000Z',
+  ),
+)
+2025-01-20 07:44:07  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '15555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:43:28.000000Z',
+  ),
+)
+2025-01-20 07:44:48  array (
+  'id' => 3,
+  'user_id1' => 1,
+  'user_id2' => 4,
+  'created_at' => '2025-01-19T14:36:19.000000Z',
+  'user1' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 4,
+    'name' => 'Логинова Ева Андреевна',
+    'email' => 'antonina38@example.com',
+    'email_verified_at' => '2025-01-19T14:36:19.000000Z',
+    'created_at' => '2025-01-19T14:36:19.000000Z',
+    'updated_at' => '2025-01-19T14:36:19.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 983,
+    'message' => '1755555555555fdg555111eaque nobis voluptas qui ut odio repellat veritatis soluta sapiente esse sit qui similique quia ipsum quo ut ut tempore',
+    'user_id' => 1,
+    'chat_id' => 3,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-19T14:36:20.000000Z',
+    'updated_at' => '2025-01-20T04:44:48.000000Z',
+  ),
+)
+2025-01-20 07:45:49  array (
+  'id' => 101,
+  'user_id1' => 102,
+  'user_id2' => 1,
+  'created_at' => '2025-01-19T16:55:24.000000Z',
+  'user1' => 
+  array (
+    'id' => 102,
+    'name' => 'Джамал',
+    'email' => 'djamal@hello.com',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T16:54:48.000000Z',
+    'updated_at' => '2025-01-19T16:54:48.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 1069,
+    'message' => 'hg',
+    'user_id' => 1,
+    'chat_id' => 101,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-20T04:45:49.000000Z',
+    'updated_at' => '2025-01-20T04:45:49.000000Z',
+  ),
+)
+2025-01-20 07:45:51  array (
+  'id' => 101,
+  'user_id1' => 102,
+  'user_id2' => 1,
+  'created_at' => '2025-01-19T16:55:24.000000Z',
+  'user1' => 
+  array (
+    'id' => 102,
+    'name' => 'Джамал',
+    'email' => 'djamal@hello.com',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T16:54:48.000000Z',
+    'updated_at' => '2025-01-19T16:54:48.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 1070,
+    'message' => 'hj',
+    'user_id' => 1,
+    'chat_id' => 101,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-20T04:45:51.000000Z',
+    'updated_at' => '2025-01-20T04:45:51.000000Z',
+  ),
+)
+2025-01-20 07:45:54  array (
+  'id' => 101,
+  'user_id1' => 102,
+  'user_id2' => 1,
+  'created_at' => '2025-01-19T16:55:24.000000Z',
+  'user1' => 
+  array (
+    'id' => 102,
+    'name' => 'Джамал',
+    'email' => 'djamal@hello.com',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T16:54:48.000000Z',
+    'updated_at' => '2025-01-19T16:54:48.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 1071,
+    'message' => 'gh',
+    'user_id' => 1,
+    'chat_id' => 101,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-20T04:45:54.000000Z',
+    'updated_at' => '2025-01-20T04:45:54.000000Z',
+  ),
+)
+2025-01-20 07:45:56  array (
+  'id' => 101,
+  'user_id1' => 102,
+  'user_id2' => 1,
+  'created_at' => '2025-01-19T16:55:24.000000Z',
+  'user1' => 
+  array (
+    'id' => 102,
+    'name' => 'Джамал',
+    'email' => 'djamal@hello.com',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T16:54:48.000000Z',
+    'updated_at' => '2025-01-19T16:54:48.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 1072,
+    'message' => 'hj',
+    'user_id' => 1,
+    'chat_id' => 101,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-20T04:45:56.000000Z',
+    'updated_at' => '2025-01-20T04:45:56.000000Z',
+  ),
+)
+2025-01-20 07:46:18  array (
+  'id' => 101,
+  'user_id1' => 102,
+  'user_id2' => 1,
+  'created_at' => '2025-01-19T16:55:24.000000Z',
+  'user1' => 
+  array (
+    'id' => 102,
+    'name' => 'Джамал',
+    'email' => 'djamal@hello.com',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T16:54:48.000000Z',
+    'updated_at' => '2025-01-19T16:54:48.000000Z',
+  ),
+  'user2' => 
+  array (
+    'id' => 1,
+    'name' => 'test',
+    'email' => 'test',
+    'email_verified_at' => NULL,
+    'created_at' => '2025-01-19T14:34:41.000000Z',
+    'updated_at' => '2025-01-19T14:34:41.000000Z',
+  ),
+  'latest_message' => 
+  array (
+    'id' => 1072,
+    'message' => 'hj',
+    'user_id' => 1,
+    'chat_id' => 101,
+    'viewed_at' => NULL,
+    'created_at' => '2025-01-20T04:45:56.000000Z',
+    'updated_at' => '2025-01-20T04:45:56.000000Z',
+  ),
+)

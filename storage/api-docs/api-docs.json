@@ -1,0 +1,818 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Messenger",
+        "description": "Мессенджер",
+        "version": "1"
+    },
+    "paths": {
+        "/chat": {
+            "get": {
+                "tags": [
+                    "chat"
+                ],
+                "summary": "Получение списка чатов пользователя",
+                "description": "Получение списка чатов пользователя",
+                "operationId": "cb94f170cf02ce390775ec8ab58363e6",
+                "parameters": [
+                    {
+                        "parameter": "page",
+                        "name": "page",
+                        "in": "query",
+                        "description": "Текущая страница",
+                        "required": false,
+                        "deprecated": false,
+                        "allowEmptyValue": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    },
+                                                    "user_id1": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "23"
+                                                    },
+                                                    "user_id2": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "11"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    },
+                                                    "user1": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id": {
+                                                                    "type": "integer",
+                                                                    "format": "int",
+                                                                    "example": "1"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string",
+                                                                    "format": "name",
+                                                                    "example": "Oleg"
+                                                                },
+                                                                "email": {
+                                                                    "type": "string",
+                                                                    "format": "email",
+                                                                    "example": "11@mail.ru"
+                                                                },
+                                                                "created_at": {
+                                                                    "type": "TIMESTAMP",
+                                                                    "format": "TIMESTAMP",
+                                                                    "example": "2025-01-19 19:55:24"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    },
+                                                    "user2": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id": {
+                                                                    "type": "integer",
+                                                                    "format": "int",
+                                                                    "example": "1"
+                                                                },
+                                                                "name": {
+                                                                    "type": "string",
+                                                                    "format": "name",
+                                                                    "example": "Oleg"
+                                                                },
+                                                                "email": {
+                                                                    "type": "string",
+                                                                    "format": "email",
+                                                                    "example": "11@mail.ru"
+                                                                },
+                                                                "created_at": {
+                                                                    "type": "TIMESTAMP",
+                                                                    "format": "TIMESTAMP",
+                                                                    "example": "2025-01-19 19:55:24"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    },
+                                                    "latest_message": {
+                                                        "type": "array",
+                                                        "items": {
+                                                            "properties": {
+                                                                "id": {
+                                                                    "type": "integer",
+                                                                    "format": "int",
+                                                                    "example": "1"
+                                                                },
+                                                                "message": {
+                                                                    "type": "string",
+                                                                    "format": "string",
+                                                                    "example": "shsga4rg34"
+                                                                },
+                                                                "user_id": {
+                                                                    "type": "integer",
+                                                                    "format": "int",
+                                                                    "example": "2"
+                                                                },
+                                                                "chat_id": {
+                                                                    "type": "integer",
+                                                                    "format": "int",
+                                                                    "example": "22"
+                                                                },
+                                                                "viewed_at": {
+                                                                    "type": "TIMESTAMP",
+                                                                    "format": "TIMESTAMP",
+                                                                    "example": "2025-01-19 19:55:24"
+                                                                },
+                                                                "created_at": {
+                                                                    "type": "TIMESTAMP",
+                                                                    "format": "TIMESTAMP",
+                                                                    "example": "2025-01-19 19:55:24"
+                                                                }
+                                                            },
+                                                            "type": "object"
+                                                        }
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "chat"
+                ],
+                "summary": "Создание чата для пользователя",
+                "description": "Создание чата для пользователя",
+                "operationId": "9ae167ebeb88c5ed41247d0af122b71d",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/ChatCreateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    },
+                                                    "user_id1": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "23"
+                                                    },
+                                                    "user_id2": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "11"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/chat/{id}": {
+            "get": {
+                "tags": [
+                    "chat"
+                ],
+                "summary": "Получение одного чата пользователя",
+                "description": "Получение одного чата пользователя",
+                "operationId": "8c680e539b37a9f303eb82fa816ac714",
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    },
+                                                    "user_id1": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "23"
+                                                    },
+                                                    "user_id2": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "11"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "chat"
+                ],
+                "summary": "Удаление чата пользователя",
+                "description": "Удаление чата пользователя",
+                "operationId": "9b2192d76ea2b33383d0328e42ff9ada",
+                "parameters": [
+                    {
+                        "parameter": "id",
+                        "name": "id",
+                        "in": "query",
+                        "description": "Идентификатор чата",
+                        "required": true,
+                        "deprecated": false,
+                        "allowEmptyValue": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешно"
+                    }
+                }
+            }
+        },
+        "/message": {
+            "get": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Получение списка сообщений пользователя",
+                "description": "Получение списка сообщений пользователя",
+                "operationId": "d801296f3ddbe6ed262c16de5b808cbe",
+                "parameters": [
+                    {
+                        "parameter": "chat_id",
+                        "name": "chat_id",
+                        "in": "query",
+                        "description": "Идентификатор чата",
+                        "required": true,
+                        "deprecated": false,
+                        "allowEmptyValue": true
+                    },
+                    {
+                        "parameter": "last_id",
+                        "name": "last_id",
+                        "in": "query",
+                        "description": "Идентифиувтор последнего отправленного серверу сообщения",
+                        "required": true,
+                        "deprecated": false,
+                        "allowEmptyValue": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    },
+                                                    "message": {
+                                                        "type": "string",
+                                                        "format": "string",
+                                                        "example": "shsga4rg34"
+                                                    },
+                                                    "user_id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "2"
+                                                    },
+                                                    "chat_id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "22"
+                                                    },
+                                                    "viewed_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    },
+                                                    "updated_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "post": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Создание сообщения",
+                "description": "Создание сообщения",
+                "operationId": "2ec025a4f87e58fa3388e2f94f0d59fc",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/MessageCreateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "delete": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Удаление сообщения",
+                "description": "Удаление сообщения",
+                "operationId": "3ddf337cf85b8c3f8877058f1507ec95",
+                "parameters": [
+                    {
+                        "parameter": "id",
+                        "name": "id",
+                        "in": "query",
+                        "description": "Идентификатор сообщения",
+                        "required": true,
+                        "deprecated": false,
+                        "allowEmptyValue": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/message/{id}": {
+            "get": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Получение одного сообщения пользователя",
+                "description": "Получение одного сообщения пользователя",
+                "operationId": "d4703eff80ef044536f65d2c59d7b65e",
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    },
+                                                    "message": {
+                                                        "type": "string",
+                                                        "format": "string",
+                                                        "example": "shsga4rg34"
+                                                    },
+                                                    "user_id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "2"
+                                                    },
+                                                    "chat_id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "22"
+                                                    },
+                                                    "viewed_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    },
+                                                    "created_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    },
+                                                    "updated_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "patch": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Изменение сообщения",
+                "description": "Изменение сообщения",
+                "operationId": "67d2020d9e3fd72414ed68406b3cf3ea",
+                "requestBody": {
+                    "$ref": "#/components/requestBodies/MessageChangeRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "id": {
+                                                        "type": "integer",
+                                                        "format": "int",
+                                                        "example": "1"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/message/watch/{message}": {
+            "patch": {
+                "tags": [
+                    "message"
+                ],
+                "summary": "Изменение статуса просмотра сообщения",
+                "description": "Изменение статуса просмотра сообщения",
+                "operationId": "980ece56c0e9410f14b3b4ee18991025",
+                "responses": {
+                    "200": {
+                        "description": "Успешно",
+                        "content": {
+                            "application/json": {
+                                "schema": {
+                                    "properties": {
+                                        "status": {
+                                            "type": "string",
+                                            "format": "string",
+                                            "example": "Successfully"
+                                        },
+                                        "paginator": {
+                                            "$ref": "#/components/schemas/Paginator"
+                                        },
+                                        "data": {
+                                            "type": "array",
+                                            "items": {
+                                                "properties": {
+                                                    "viewed_at": {
+                                                        "type": "TIMESTAMP",
+                                                        "format": "TIMESTAMP",
+                                                        "example": "2025-01-19 19:55:24"
+                                                    }
+                                                },
+                                                "type": "object"
+                                            }
+                                        }
+                                    },
+                                    "type": "object"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "Paginator": {
+                "properties": {
+                    "current_page": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "1"
+                    },
+                    "first_page_url": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "http://138.124.55.208/api/prod/chat?page=1"
+                    },
+                    "from": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "1"
+                    },
+                    "last_page": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "380"
+                    },
+                    "last_page_url": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "http://138.124.55.208/api/prod/chat?page=5"
+                    },
+                    "next_page_url": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "http://138.124.55.208/api/prod/chat?page=3"
+                    },
+                    "path": {
+                        "type": "string",
+                        "format": "url",
+                        "example": "http://138.124.55.208/api/prod/chat?page=2"
+                    },
+                    "per_page": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "30"
+                    },
+                    "to": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "30"
+                    },
+                    "total": {
+                        "type": "integer",
+                        "format": "int",
+                        "example": "11371"
+                    }
+                },
+                "type": "object"
+            }
+        },
+        "requestBodies": {
+            "ChatCreateRequest": {
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "user_id2": {
+                                    "schema": "required|int",
+                                    "type": "integer",
+                                    "format": "int",
+                                    "example": "4"
+                                },
+                                "message": {
+                                    "schema": "required|string",
+                                    "type": "string",
+                                    "format": "string",
+                                    "example": "dssvsdvsv"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "MessageChangeRequest": {
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "message": {
+                                    "schema": "required|string",
+                                    "type": "string",
+                                    "format": "string",
+                                    "example": "dssvsdvsv"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            },
+            "MessageCreateRequest": {
+                "required": true,
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "properties": {
+                                "chat_id": {
+                                    "schema": "required|int",
+                                    "type": "integer",
+                                    "format": "int",
+                                    "example": "4"
+                                },
+                                "message": {
+                                    "schema": "required|string",
+                                    "type": "string",
+                                    "format": "string",
+                                    "example": "dssvsdvsv"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "tags": [
+        {
+            "name": "chat",
+            "description": "chat"
+        },
+        {
+            "name": "message",
+            "description": "message"
+        }
+    ]
+}

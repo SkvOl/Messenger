@@ -1,0 +1,90 @@
+services:
+  messenger:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: messenger
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: messenger
+      SERVICE_TAGS: dev
+    working_dir: '/var/www/messenger'
+    depends_on:
+      - db-dev
+    volumes: 
+      - '.:/var/www/messenger'
+    ports:
+      - 9001:9001
+    networks:
+      - messenger-net
+
+  messenger_webserver:
+    image: nginx:alpine
+    container_name: messenger_webserver
+    restart: unless-stopped
+    tty: true
+    depends_on:
+      - messenger
+    ports:
+      - "80:80"
+    volumes:
+      - '.:/var/www/messenger'
+      - './nginx:/etc/nginx/conf.d'
+    networks:
+      - messenger-net
+
+  db-dev:
+    image: postgres
+    container_name: db_dev
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_DB: messenger
+      POSTGRES_USER: api-server
+      POSTGRES_PASSWORD: hf498jfjh983h7f
+    ports:
+      - 54321:5432
+    networks:
+      messenger-net:
+        ipv4_address: 172.20.0.3
+
+  db-prod:
+    image: postgres
+    container_name: db_prod
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_DB: messenger
+      POSTGRES_USER: api-server
+      POSTGRES_PASSWORD: fuh47h7h878su8u
+    ports:
+      - 54322:5432
+    networks:
+      messenger-net:
+        ipv4_address: 172.20.0.4
+
+  pgadmin:
+    image: dpage/pgadmin4:8.4
+    container_name: pgadmin
+    environment:
+      PGADMIN_DEFAULT_EMAIL: "admin@admin.ru"
+      PGADMIN_DEFAULT_PASSWORD: "admin"
+    ports:
+      - 8080:80
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 1G
+    networks:
+      - messenger-net
+
+networks:
+  messenger-net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+          gateway: 172.20.0.1

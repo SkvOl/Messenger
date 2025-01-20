@@ -1,0 +1,1 @@
+import{aq as n,ar as o,r as u,as as i,at as f}from"./index-DwUKqWVr.js";function g(s,t){const r=n(),e=o(a=>a.user.isLogin),c=o(a=>a.user.id);u.useEffect(e?s:()=>{r(i())},t==null?void 0:t.concat(c))}function h(s){return f(s).format("DD.MM.YYYY HH:mm:ss")}export{h as g,g as u};

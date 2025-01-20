@@ -13,3 +13,8 @@ php-fpm для Laravel 11,<br>
 nginx:alpine,<br>
 postgres разработческая,<br>
 postgres продакшн<br>
+
+Для пользователя<br>
+email=test<br>
+password=test<br>
+было созданно большое число тестовых данных.
